@@ -1,0 +1,68 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# ======== FRONTEND =========
+frontend/node_modules
+frontend/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# next.js
+frontend/.next/
+frontend/out/
+
+# testing
+coverage/
+
+# production
+frontend/build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+frontend/.env*
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+frontend/next-env.d.ts
+
+
+# ======== BACKEND =========
+backend/bin/
+backend/obj/
+backend/*.user
+backend/*.suo
+backend/*.swp
+backend/*.dbmdl
+backend/*.log
+backend/*.vspscc
+backend/*.vssscc
+
+# Visual Studio / Rider settings
+.vscode/
+.idea/
+*.iml
+.vs/
+
+# Resharper / Rider caches
+_ReSharper.Caches/
+
+# ==========================
+# OS Specific
+# ==========================
+.DS_Store
+Thumbs.db
+
+# Certificates / Keys
+*.pem
