@@ -31,8 +31,8 @@ export default function Projects() {
       name: "TiwalaChain",
       desc: "A blockchain-based freelance web application for secure contracts.",
       fullDesc:
-        "TiwalaChain is a decentralized freelance web application that ensures contracts integrity using blockchain technology.",
-      img: null,
+        "TiwalaChain is a decentralized freelance web application that ensures contract integrity using blockchain technology.",
+      img: "/assets/tiwalachain.png",
       tech: ["Next.js", "Tailwind CSS", "C#", "ASP.NET Core", "PostgreSQL", "Solidity", "Hugging Face"],
     },
     {
@@ -40,7 +40,7 @@ export default function Projects() {
       desc: "A webtoon/manga web application for managing and discovering digital content.",
       fullDesc:
         "Shelflyx is a web application that allows users to manage and discover digital content such as webtoons and manga, providing a seamless reading experience.",
-      img: null,
+      img: "/assets/shelflyx.png",
       tech: ["C#", "ASP.NET Core", "SQL Server"],
     },
     {
