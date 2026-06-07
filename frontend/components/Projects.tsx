@@ -55,6 +55,15 @@ export default function Projects() {
       tech: ["Flutter", "Firebase"],
       github: "https://github.com/Fluished/Nutriscan",
     },
+    {
+      name: "Ark Mod Manager",
+      desc: "A mod organization tool for Ark Survival Evolved dedicated servers.",
+      fullDesc:
+        "Ark Mod Manager is a tool designed to help the process of managing mods for Ark Survival Evolved dedicated servers, providing an interface for simple mod management.",
+      img: "/assets/arkmodmanager.png",
+      tech: ["React.js", "Electron"],
+      github: "https://github.com/Fluished/ArkModManager",
+    }
   ];
 
   return (
