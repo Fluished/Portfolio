@@ -4,6 +4,6 @@
   <img src="https://img.shields.io/badge/Portfolio-Visit-blue?style=for-the-badge" />
 </a>
 
-```md
+---
 ![Portfolio Preview](public/assets/preview.png)
-```
+
