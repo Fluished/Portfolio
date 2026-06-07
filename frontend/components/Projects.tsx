@@ -8,6 +8,7 @@ type Project = {
   fullDesc: string;
   img: string | null;
   tech: string[];
+  github?: string;
 };
 
 export default function Projects() {
@@ -34,6 +35,7 @@ export default function Projects() {
         "TiwalaChain is a decentralized freelance web application that ensures contract integrity using blockchain technology.",
       img: "/assets/tiwalachain.png",
       tech: ["Next.js", "Tailwind CSS", "C#", "ASP.NET Core", "PostgreSQL", "Solidity", "Hugging Face"],
+      github: "https://github.com/rustumsk/Tiwala-Chain",
     },
     {
       name: "Shelflyx",
@@ -42,6 +44,7 @@ export default function Projects() {
         "Shelflyx is a web application that allows users to manage and discover digital content such as webtoons and manga, providing a seamless reading experience.",
       img: "/assets/shelflyx.png",
       tech: ["C#", "ASP.NET Core", "SQL Server"],
+      github: "https://github.com/Fluished/Shelflyx",
     },
     {
       name: "Nutriscan",
@@ -50,6 +53,7 @@ export default function Projects() {
         "Nutriscan analyzes food labels and provides instant nutritional breakdowns and get health suggestions from an AI chatbot.",
       img: null,
       tech: ["Flutter", "Firebase"],
+      github: "https://github.com/Fluished/Nutriscan",
     },
   ];
 
@@ -115,7 +119,19 @@ export default function Projects() {
                 {/* CONTENT */}
                 <div className="p-6">
                   <h2 className="text-2xl font-bold mb-2">
-                    {selectedProject.name}
+                    {selectedProject.github ? (
+                      <a
+                        href={selectedProject.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="hover:text-[var(--accent)] transition"
+                      >
+                        {selectedProject.name}
+                      </a>
+                    ) : (
+                      selectedProject.name
+                    )}
                   </h2>
 
                   <p className="text-muted mb-5 leading-relaxed">
