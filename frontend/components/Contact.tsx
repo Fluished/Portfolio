@@ -26,11 +26,11 @@ export default function Contact() {
         <div className="bg-background">
             <section id="contact" className="py-32 px-10 max-w-4xl mx-auto ">
                 <div className="bg-[linear-gradient(to_bottom,#020817,#0f172a)] rounded-2xl p-10">
-                    <p className="text-accent uppercase tracking-widest mb-3 text-sm font-medium">
+                    <p className="text-[var(--accent)] uppercase tracking-widest mb-3 text-sm font-medium">
                         Contact
                     </p>
                     <h2 className="text-4xl font-bold mb-6">
-                        Get in <span className="text-accent">Touch</span>
+                        Get in Touch
                     </h2>
 
                     <p className="text-muted mb-10 leading-relaxed">
@@ -38,26 +38,43 @@ export default function Contact() {
                     </p>
 
                     <form onSubmit={handleSubmit} className="space-y-6">
-                        {/* Name */}
                         <div>
                             <label className="block text-sm text-muted mb-2">Name</label>
-                            <input type="text" placeholder="Your name" name="name" value={form.name} onChange={handleChange} className="w-full px-4 py-3 rounded-xl bg-secondary border border-card text-text outline-none focus:border-accent transition" />
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Your name"
+                                value={form.name}
+                                onChange={handleChange}
+                                className="w-full px-4 py-3 rounded-xl bg-secondary border border-card text-text outline-none hover:border-[var(--accent)] focus:border-[var(--accent)] transition"
+                            />
                         </div>
 
-                        {/* Email */}
                         <div>
                             <label className="block text-sm text-muted mb-2">Email</label>
-                            <input type="email" placeholder="you@example.com" name="email" value={form.email} onChange={handleChange} className="w-full px-4 py-3 rounded-xl bg-secondary border border-card text-text outline-none focus:border-accent transition" />
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Your email"
+                                value={form.email}
+                                onChange={handleChange}
+                                className="w-full px-4 py-3 rounded-xl bg-secondary border border-card text-text outline-none hover:border-[var(--accent)] focus:border-[var(--accent)] transition"
+                            />
                         </div>
 
-                        {/* Message */}
                         <div>
                             <label className="block text-sm text-muted mb-2">Message</label>
-                            <textarea name="message" value={form.message} onChange={handleChange} rows={5} placeholder="Write your message..." className="w-full px-4 py-3 rounded-xl bg-secondary border border-card text-text outline-none focus:border-accent transition resize-none" />
+                            <textarea
+                                name="message"
+                                placeholder="Write your message..."
+                                value={form.message}
+                                onChange={handleChange}
+                                rows={5}
+                                className="w-full px-4 py-3 rounded-xl bg-secondary border border-card text-text outline-none hover:border-[var(--accent)] focus:border-[var(--accent)] transition resize-none"
+                            />
                         </div>
 
-                        {/* Button */}
-                        <button type="submit" disabled={status === "loading"} className="w-full bg-[var(--accent)] text-sm py-3 rounded-xl font-semibold hover:opacity-90 transition-all duration-300 shadow-lg shadow-accent/20">
+                        <button type="submit" disabled={status === "loading"} className="w-full bg-[var(--accent)] text-sm py-3 rounded-xl font-semibold hover:opacity-90 transition-all duration-300 shadow-lg shadow-[var(--accent)]/20">
                             {status === "loading" ? "Sending..." : "Send Message"}
                         </button>
 
