@@ -71,7 +71,7 @@ export default function Projects() {
       <section id="projects" className="relative py-28 px-6">
         <div className="bg-[linear-gradient(to_top,#020817,#0f172a)] max-w-6xl mx-auto rounded-2xl p-5 md:p-10">
           <div className="mb-14 text-center">
-            <p className="text-accent uppercase tracking-[0.35em] text-xs font-medium">
+            <p className="text-[var(--accent)] uppercase tracking-[0.35em] text-xs font-medium">
               Projects
             </p>
 
@@ -100,7 +100,7 @@ export default function Projects() {
 
                 {/* CONTENT */}
                 <div className="p-5">
-                  <h4 className="text-lg font-semibold mb-2 group-hover:text-accent transition">
+                  <h4 className="text-lg font-semibold mb-2 group-hover:text-[var(--accent)] transition">
                     {project.name}
                   </h4>
 

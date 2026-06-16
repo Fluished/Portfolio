@@ -22,7 +22,7 @@ export default function Hero() {
 
     return (
         <section id="about" className="min-h-screen flex flex-col items-center justify-center text-center px-6 py-36 bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.08),transparent_60%)]">
-            <p className="text-accent uppercase tracking-[0.3em] mb-4 text-sm font-medium overflow-hidden whitespace-nowrap border-r-2 border-accent w-fit animate-typing">
+            <p className="text-[var(--accent)] uppercase tracking-[0.3em] mb-4 text-sm font-medium overflow-hidden whitespace-nowrap border-r-2 border-[var(--accent)] w-fit animate-typing">
                 Tech Enthusiast
             </p>
 
@@ -44,7 +44,7 @@ export default function Hero() {
                         href={social.href}
                         target={social.href.startsWith("http") ? "_blank" : undefined}
                         rel="noopener noreferrer"
-                        className="text-muted hover:text-accent hover:scale-110 transition-all duration-300"
+                        className="text-muted hover:text-[var(--accent)] hover:scale-110 transition-all duration-300"
                         aria-label={social.label}
                     >
                         {social.icon}
@@ -57,7 +57,7 @@ export default function Hero() {
                     View Projects
                 </a>
 
-                <a href="#contact" className="border border-card bg-secondary hover:border-accent hover:text-accent px-6 py-3 rounded-xl font-medium transition-all duration-300">
+                <a href="#contact" className="border border-card bg-secondary hover:border-[var(--accent)] hover:text-[var(--accent)] px-6 py-3 rounded-xl font-medium transition-all duration-300">
                     Contact Me
                 </a>
             </div>
