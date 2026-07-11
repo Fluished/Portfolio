@@ -34,7 +34,7 @@ export default function Projects() {
       fullDesc:
         "TiwalaChain is a decentralized freelance web application that ensures contract integrity using blockchain technology.",
       img: "/assets/tiwalachain.png",
-      tech: ["Next.js", "Tailwind CSS", "C#", "ASP.NET Core", "PostgreSQL", "Solidity", "Hugging Face"],
+      tech: ["Next.js", "Tailwind CSS", "C#", "ASP.NET Core", "Python", "FastAPI", "PostgreSQL", "Solidity", "Hugging Face", "Blockchain"],
       github: "https://github.com/rustumsk/Tiwala-Chain",
     },
     {
@@ -61,7 +61,7 @@ export default function Projects() {
       fullDesc:
         "Ark Mod Manager is a tool designed to help the process of managing mods for Ark Survival Evolved dedicated servers, providing an interface for simple mod management.",
       img: "/assets/arkmodmanager.png",
-      tech: ["React.js", "Electron"],
+      tech: ["React.js", "Tauri", "Rust"],
       github: "https://github.com/Fluished/ArkModManager",
     }
   ];
