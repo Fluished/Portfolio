@@ -35,7 +35,7 @@ export default function Projects() {
         "TiwalaChain is a decentralized freelance web application that ensures contract integrity using blockchain technology.",
       img: "/assets/tiwalachain.png",
       tech: ["Next.js", "Tailwind CSS", "C#", "ASP.NET Core", "Python", "FastAPI", "PostgreSQL", "Solidity", "Hugging Face", "Blockchain"],
-      github: "https://github.com/rustumsk/Tiwala-Chain",
+      github: "https://tiwala-chain.vercel.app/",
     },
     {
       name: "Shelflyx",
